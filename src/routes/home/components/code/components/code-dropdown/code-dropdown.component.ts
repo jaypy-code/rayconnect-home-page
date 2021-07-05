@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { files, IFile } from '../../../../database/code';
+import { files } from '../../../../database/code';
 
 @Component({
   selector: 'app-code-dropdown',
@@ -8,13 +8,12 @@ import { files, IFile } from '../../../../database/code';
 })
 export class CodeDropdownComponent implements OnInit {
 
+
   @Input() show: boolean = true;
   @Input() index: number = 0;
   @Output() changeIndex: EventEmitter<number> = new EventEmitter<number>();
 
-  get lang(): string {
-    return files[this.index].lang;
-  }
+  public lang: string = files[this.index].lang;
 
   get langs(): string[] {
     let langs = files.map(item => item.lang);

@@ -1,7 +1,7 @@
 <div class="dropdown flex nowrap" [ngClass]="{'show': show}">
     <div class="langs flex column ai-c">
         <ng-container *ngFor="let item of langs">
-            <div class="item" [ngClass]="[item, item == lang?'active': '']"></div>
+            <div class="item" (click)="lang = item" [ngClass]="[item, item == lang?'active': '']"></div>
         </ng-container>
     </div>
 
