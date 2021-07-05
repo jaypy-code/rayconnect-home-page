@@ -1,0 +1,82 @@
+footer {
+    margin-top: 100px;
+
+    position: relative;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+
+        top: -30px;
+
+        width: 100%;
+        height: 30px;
+
+        background-image: url("/assets/images/home/details/footer-line.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    div.links a {
+        margin-right: 20px;
+
+        color: var(--footer-link-text-color);
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    div.with-what {
+        margin: 0 15%;
+
+        white-space: pre;
+
+        span.love {
+            width: 45px;
+            height: 32px;
+
+            background-image: url("/assets/images/home/love.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+        }
+    }
+
+    div.social-media {
+        a {
+            width: 20px;
+            height: 20px;
+
+            margin-right: 10px;
+
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            filter: grayscale(1);
+
+            &:hover {
+                filter: grayscale(0);
+            }
+
+            &.twitter {
+                background-image: url("/assets/images/social/twitter.png");
+            }
+
+            &.instagram {
+                background-image: url("/assets/images/social/instagram.png");
+            }
+
+            &.youtube {
+                background-image: url("/assets/images/social/youtube.png");
+            }
+
+            &.github {
+                background-image: url("/assets/images/social/github.png");
+            }
+        }
+    }
+}

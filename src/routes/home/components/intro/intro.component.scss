@@ -1,0 +1,118 @@
+section.intro {
+    width: 35vw;
+
+    padding: 5% 0;
+
+    z-index: 4;
+
+    h1 {
+        font-size: 4em;
+
+        line-height: 1.7em;
+
+        color: var(--intro-title-color);
+
+        span {
+            position: relative;
+
+            z-index: 1;
+
+            &::before {
+                content: "";
+
+                position: absolute;
+
+                top: 0;
+                right: 0;
+
+                width: 100%;
+                height: 1.4em;
+
+                border-radius: 50%;
+
+                border: 3px solid var(--intro-title-border-color);
+
+                transition: all var(--animation-speed);
+
+                transform: rotate(-10deg);
+
+                z-index: -1;
+            }
+        }
+    }
+
+    p {
+        font-size: 1.4em;
+
+        line-height: 2em;
+
+        color: var(--intro-sub-title-color);
+
+        margin-bottom: 70px;
+    }
+
+    a {
+        position: relative;
+
+        color: var(--intro-link-color);
+
+        margin-right: auto;
+
+        font-size: 1.2em;
+
+        &::before,
+        &::after {
+            content: "";
+
+            position: absolute;
+
+            top: -25px;
+            right: -75%;
+
+            width: 250%;
+            height: 65px;
+
+            border-radius: 50%;
+
+            border: 2px solid var(--intro-link-border-color);
+
+            transition: all var(--animation-speed);
+        }
+
+        &::before {
+            transform: rotate(30deg);
+        }
+
+        &::after {
+            transform: rotate(10deg);
+        }
+
+        &:hover {
+            &::before {
+                transform: rotate(5deg);
+            }
+
+            &::after {
+                transform: rotate(-5deg);
+            }
+        }
+
+        &:active {
+            &::before {
+                transform: rotate(2deg);
+            }
+
+            &::after {
+                transform: rotate(-2deg);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1570px) {
+    section.intro {
+        h1 {
+            font-size: 3em;
+        }
+    }
+}

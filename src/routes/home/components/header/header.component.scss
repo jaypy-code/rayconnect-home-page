@@ -1,0 +1,154 @@
+header {
+    position: relative;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+
+        top: -30px;
+        left: -10vw;
+
+        width: 30vw;
+        height: 30vw;
+
+        background-image: url("/assets/images/home/details/header-lines.svg");
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    a {
+        color: var(--header-text-color);
+
+        transition: all var(--animation-speed);
+    }
+
+    a.app-header {
+        span {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    }
+
+    div.links {
+        margin: 0 auto;
+
+        a {
+            position: relative;
+
+            padding: 8px 16px;
+
+            z-index: 0;
+
+            &::before {
+                content: "";
+
+                position: absolute;
+
+                top: 0;
+                left: 0;
+
+                width: 100%;
+                height: 100%;
+
+                border-radius: var(--radius);
+
+                background-color: #fff;
+
+                z-index: -1;
+
+                transform: scale(0);
+
+                transition: all var(--animation-speed);
+            }
+
+            &:hover::before {
+                transform: scale(1);
+            }
+
+            &:active::before {
+                transform: scale(0.8);
+            }
+        }
+    }
+
+    a.open-panel {
+        border-radius: var(--radius);
+
+        border: 2px solid var(--header-border-color);
+
+        padding: 12px 32px;
+
+        font-size: 15px;
+
+        background-color: var(--background-color);
+
+        z-index: 1;
+
+        &:hover {
+            background-color: var(--header-border-color);
+
+            color: #fff;
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+
+        margin-right: auto;
+
+        background-color: transparent;
+
+        border: none;
+
+        position: relative;
+
+        cursor: pointer;
+
+        z-index: 12;
+
+        display: none;
+
+        &::before,
+        &::after {
+            content: "";
+
+            position: absolute;
+
+            right: 0;
+
+            width: 100%;
+            height: 2px;
+
+            background-color: var(--header-button-line-color);
+
+            transition: all var(--animation-speed);
+        }
+
+        &::before {
+            top: 14px;
+        }
+
+        &::after {
+            bottom: 14px;
+        }
+
+        &.close {
+            &::before {
+                top: 50%;
+                transform: rotate(40deg) translateY(-50%);
+            }
+
+            &::after {
+                bottom: 50%;
+                transform: rotate(-40deg) translateY(50%);
+            }
+        }
+    }
+}

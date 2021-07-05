@@ -1,0 +1,9 @@
+<div class="menu hide flex column ai-c jc-c">
+    <div class="links flex column ai-c ">
+        <ng-container *ngFor="let item of links">
+            <a [routerLink]="item.link">{{item.text}}</a>
+        </ng-container>
+    </div>
+
+    <a href="https://dashboard.rayconnect.ir" class="open-panel">ورود به پنل</a>
+</div>

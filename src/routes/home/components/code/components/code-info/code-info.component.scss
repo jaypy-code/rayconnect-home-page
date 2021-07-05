@@ -1,0 +1,22 @@
+div.info-box {
+    position: absolute;
+
+    bottom: -50px;
+    right: calc(10% + 150px);
+
+    padding: 30px;
+
+    max-width: 250px;
+
+    background-color: var(--code-info-background-color);
+    color: #fff;
+
+    z-index: 2;
+
+    text-align: right;
+    direction: rtl;
+
+    line-height: 30px;
+
+    border-radius: var(--radius);
+}

@@ -1,0 +1,19 @@
+<section class="code flex nowrap">
+    <app-code-drawer></app-code-drawer>
+
+    <div class="code-container flex column">
+        <div class="tabs flex nowrap ai-c">
+            <app-code-tab [lang]="files[index].lang" [name]="files[index].name" (click)="show = !show"></app-code-tab>
+        </div>
+
+        <app-code-dropdown [index]="index" [show]="show" (changeIndex)="setIndex($event)"></app-code-dropdown>
+
+        <app-code-content [code]="files[index].code"></app-code-content>
+    </div>
+
+    <app-code-info></app-code-info>
+
+    <div class="icon-container">
+        <div class="icon"></div>
+    </div>
+</section>

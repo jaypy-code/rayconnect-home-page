@@ -1,0 +1,65 @@
+div.tab {
+    padding: 10px 70px 10px 16px;
+
+    margin-right: 12px;
+
+    background-color: var(--code-tab-background-color);
+
+    border-radius: var(--radius);
+
+    cursor: pointer;
+
+    position: relative;
+    top: 0;
+
+    transition: all var(--animation-speed);
+
+    z-index: 3;
+
+    &.active {
+        top: -5px;
+    }
+
+    &::before {
+        content: "";
+
+        position: absolute;
+
+        top: 50%;
+        right: 16px;
+
+        transform: translateY(-50%);
+
+        width: 5px;
+        height: 5px;
+
+        border-radius: 50%;
+
+        background-color: var(--code-tab-text-color);
+    }
+
+    div.logo {
+        width: 20px;
+        height: 20px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        margin-right: 8px;
+
+        &.typescript {
+            background-image: url("/assets/languages/typescript.svg");
+        }
+
+        &.flutter {
+            background-image: url("/assets/languages/flutter.svg");
+        }
+    }
+
+    span {
+        color: var(--code-tab-text-color);
+
+        font-size: 0.9em;
+    }
+}

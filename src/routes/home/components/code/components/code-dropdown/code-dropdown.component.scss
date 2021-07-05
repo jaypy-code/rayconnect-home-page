@@ -1,0 +1,86 @@
+div.dropdown {
+    position: absolute;
+
+    top: 70px;
+    left: 8%;
+
+    width: 30%;
+    height: 70%;
+
+    min-width: 250px;
+
+    background-color: var(--code-dropdown-background-color);
+
+    border-radius: var(--radius);
+
+    z-index: 2;
+
+    overflow: hidden;
+
+    transition: all var(--animation-speed);
+
+    &:not(.show) {
+        top: 50px;
+
+        opacity: 0;
+
+        pointer-events: none;
+    }
+
+    div.langs {
+        padding: 10px 0;
+
+        width: 56px;
+        height: calc(100% - 20px);
+
+        border-right: 1px solid rgba($color: #000000, $alpha: 0.12);
+
+        div.item {
+            width: 32px;
+            height: 32px;
+
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 20px;
+
+            cursor: pointer;
+
+            margin-bottom: 15px;
+
+            opacity: 0.6;
+
+            &:hover,
+            &.active {
+                opacity: 1;
+            }
+
+            &.typescript {
+                background-image: url("/assets/languages/typescript.svg");
+            }
+
+            &.flutter {
+                background-image: url("/assets/languages/flutter.svg");
+            }
+        }
+    }
+
+    div.files {
+        width: 100%;
+
+        div.item {
+            padding: 10px 20px;
+
+            cursor: pointer;
+
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.12);
+
+            span {
+                margin-left: auto;
+            }
+
+            &.active {
+                background-color: rgba($color: #000000, $alpha: 0.09);
+            }
+        }
+    }
+}

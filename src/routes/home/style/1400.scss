@@ -1,0 +1,33 @@
+@media screen and (max-width: 1400px) {
+    main {
+        div.faqs-sub {
+            width: 50vw !important;
+
+            section.faqs div.faq {
+                h3 {
+                    min-width: 160px;
+                }
+
+                div.space-line {
+                    width: 35px;
+                }
+
+                p {
+                    width: calc(100% - 160px - 35px - 25px);
+
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1400px) {
+    main {
+        padding: 20px 5vw !important;
+
+        app-code {
+            margin-right: auto;
+        }
+    }
+}

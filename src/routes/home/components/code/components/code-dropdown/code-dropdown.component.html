@@ -1,0 +1,14 @@
+<div class="dropdown flex nowrap" [ngClass]="{'show': show}">
+    <div class="langs flex column ai-c">
+        <ng-container *ngFor="let item of langs">
+            <div class="item" [ngClass]="[item, item == lang?'active': '']"></div>
+        </ng-container>
+    </div>
+
+    <div class="files flex column">
+        <ng-container *ngFor="let item of files">
+            <div class="item" [ngClass]="{'active': item.index == index}" (click)="changeIndex.emit(item.index)">
+                {{item.name}}</div>
+        </ng-container>
+    </div>
+</div>

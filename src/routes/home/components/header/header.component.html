@@ -1,0 +1,15 @@
+<header class="flex nowrap ai-c">
+    <a routerLink="/" class="app-header">
+        <span>رایکانکت</span>
+    </a>
+
+    <div class="links">
+        <ng-container *ngFor="let item of links">
+            <a [routerLink]="item.link">{{item.text}}</a>
+        </ng-container>
+    </div>
+
+    <a href="https://dashboard.rayconnect.ir" class="open-panel">ورود به پنل</a>
+
+    <button (click)="toggleMenu()"></button>
+</header>

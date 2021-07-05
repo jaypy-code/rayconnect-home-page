@@ -1,0 +1,94 @@
+@media only screen and (max-width: 992px) {
+    main {
+        header {
+            &::before {
+                width: 400px !important;
+                height: 400px !important;
+            }
+
+            div.links,
+            a.open-panel {
+                display: none;
+            }
+
+            button {
+                display: block !important;
+            }
+        }
+
+        div.intro-container {
+            flex-direction: column;
+
+            section.intro {
+                width: 100%;
+                margin-bottom: 100px;
+            }
+
+            section.code {
+                width: 100%;
+                margin-bottom: 100px;
+
+                div.code-container {
+                    &::before {
+                        right: -4%;
+                    }
+
+                    &::after {
+                        right: -5%;
+                    }
+
+                    div.content {
+                        width: 100%;
+                    }
+                }
+
+                div.info-box {
+                    right: calc(-10% + 150px);
+                }
+            }
+        }
+
+        div.boxs-faqs-sub {
+            flex-direction: column;
+
+            section.boxs {
+                width: 100% !important;
+                margin-top: 150px;
+
+                &::before {
+                    width: 150px !important;
+                    height: 150px !important;
+                }
+
+                &::after {
+                    width: 80vw !important;
+                    height: 80vw !important;
+                }
+
+                app-box {
+                    margin-top: 10%;
+                }
+            }
+
+            div.faqs-sub {
+                width: 100% !important;
+
+                section.faqs {
+                    margin-bottom: 200px !important;
+
+                    &::after {
+                        width: 50vw !important;
+                        height: 50vw !important;
+                    }
+                }
+
+                section.subscribe {
+                    &::before {
+                        width: 150px !important;
+                        height: 150px !important;
+                    }
+                }
+            }
+        }
+    }
+}

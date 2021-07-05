@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./style/font.css";
+@import "./style/normalize.css";
+@import "./style/flex.scss";
+
+* {
+    outline: none;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}

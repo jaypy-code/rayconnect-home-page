@@ -1,0 +1,43 @@
+main {
+    --animation-speed: 0.3s;
+
+    --radius: 3px;
+
+    --background-color: #f2ebe4;
+
+    --header-text-color: #616161;
+    --header-border-color: #424242;
+    --header-button-line-color: #424242;
+
+    --intro-title-color: #333333;
+    --intro-title-border-color: #d4c6b6;
+    --intro-sub-title-color: #707070;
+    --intro-link-color: #b6281a;
+    --intro-link-border-color: #424242;
+
+    --code-content-background-color: #b780e7;
+    --code-content-scroll-color: rgba(0, 0, 0, 0.3);
+    --code-drawer-background-color: #424242;
+    --code-drawer-button-red: #ff1744;
+    --code-drawer-button-yellow: #ffea00;
+    --code-drawer-button-green: #00e676;
+    --code-tab-text-color: #424242;
+    --code-tab-background-color: #f6cf58;
+    --code-dropdown-background-color: #f6cf58;
+    --code-info-background-color: #424242;
+
+    --box-border-color: #424244;
+    --box-content-text-color: #707070;
+    --box-link-text-color: #b6281a;
+
+    --faq-line-color: #616161;
+    --faq-answer-text-color: #707070;
+
+    --subscribe-icon-background-color: #f6cf58;
+    --subscribe-icon-border-color: #707070;
+    --subscribe-subtitle-text-color: #707070;
+    --subscribe-input-border-color: #424242;
+    --subscribe-button-background-color: #424242;
+
+    --footer-link-text-color: #707070;
+}

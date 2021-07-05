@@ -1,0 +1,65 @@
+div.content {
+    width: 80%;
+    height: 100%;
+
+    background-color: var(--code-content-background-color);
+
+    margin-left: 0;
+
+    border-radius: var(--radius);
+
+    padding-top: 20px;
+
+    overflow: auto;
+
+    z-index: 1;
+
+    div.lines-number {
+        width: 45px;
+        min-width: 45px;
+
+        line-height: 30px;
+
+        font-size: 0.8em;
+
+        text-align: right;
+
+        color: rgba($color: #000000, $alpha: 0.5);
+
+        margin-right: 14px;
+        margin-top: 14px;
+    }
+
+    pre {
+        line-height: 30px;
+
+        font-size: 0.8em;
+
+        user-select: text;
+
+        &::selection {
+            background-color: rgba($color: #000000, $alpha: 0.2);
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background-color: var(--code-content-background-color);
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--code-content-scroll-color);
+
+        border-radius: 3em;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #000000;
+    }
+}

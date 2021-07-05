@@ -1,0 +1,32 @@
+@media only screen and (max-width: 620px) {
+    main {
+        section.intro a {
+            margin-left: 30px;
+        }
+
+        section.code {
+            width: 100vw !important;
+            margin-right: 0 !important;
+        }
+
+        div.faq {
+            flex-direction: column;
+
+            div.space-line {
+                display: none;
+            }
+
+            p {
+                width: calc(100% - 40px) !important;
+            }
+        }
+
+        footer {
+            flex-direction: column;
+
+            div.with-what {
+                margin: 5% 0 !important;
+            }
+        }
+    }
+}

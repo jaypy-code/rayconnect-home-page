@@ -1,0 +1,29 @@
+<main class="flex column">
+    <app-header></app-header>
+    <app-menu></app-menu>
+
+    <div class="intro-container flex nowrap ai-c">
+        <app-intro></app-intro>
+        <app-code></app-code>
+    </div>
+
+    <div class="boxs-faqs-sub flex nowrap">
+        <section class="boxs flex column">
+            <ng-container *ngFor="let item of boxs">
+                <app-box [title]="item.title" [content]="item.content" [redirectTo]="item.redirectTo"></app-box>
+            </ng-container>
+        </section>
+
+        <div class="faqs-sub flex column">
+            <section class="faqs flex column">
+                <ng-container *ngFor="let item of faqs">
+                    <app-faq [question]="item.question" [answer]="item.answer"></app-faq>
+                </ng-container>
+            </section>
+
+            <app-subscribe></app-subscribe>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+</main>
