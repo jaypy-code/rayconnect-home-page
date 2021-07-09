@@ -4,11 +4,7 @@
 @import "../style/992.scss";
 @import "../style/620.scss";
 
-* {
-    font-family: iransansdn, Tahoma;
-}
-
-main {
+main.home {
     height: calc(100vh - 40px);
 
     padding: 20px 10vw;
@@ -16,6 +12,10 @@ main {
     background-color: var(--background-color);
 
     overflow-x: hidden;
+
+    * {
+        font-family: iransansdn, Tahoma;
+    }
 
     div.boxs-faqs-sub {
         width: 100%;
