@@ -19,6 +19,50 @@ section.code {
                 display: none;
             }
         }
+
+        div.drawer {
+            top: 0 !important;
+            left: 0 !important;
+            height: 100%;
+
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        div.tabs {
+            top: 0 !important;
+            left: 0 !important;
+            width: 100%;
+
+            background-color: var(--code-content-background-color);
+
+            div.tab {
+                top: 5px;
+                left: 5px;
+            }
+        }
+
+        div.content {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+
+            width: 100%;
+
+            padding-top: 0;
+            padding-bottom: 20px;
+        }
+
+        div.dropdown {
+            top: 50px;
+            left: 5px;
+
+            width: 98%;
+            height: 91%;
+
+            &:not(.show) {
+                top: 20px;
+            }
+        }
     }
 
     div.code-container {
