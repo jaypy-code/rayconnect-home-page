@@ -1,0 +1,36 @@
+<div class="flex column">
+    <section class="last-latests flex nowrap">
+        <app-post view="last" [id]="post.id" [image]="post.image" [title]="post.title" [summery]="post.summery"
+            [at]="from(post.at)" [tags]="post.tags" [writer]="post.writer"></app-post>
+        <section class="latests flex column">
+            <app-post view="latest" [id]="post.id" [image]="post.image" [title]="post.title" [summery]="post.summery"
+                [at]="from(post.at)" [tags]="post.tags" [writer]="post.writer"></app-post>
+            <app-post view="latest" [id]="post.id" [image]="post.image" [title]="post.title" [summery]="post.summery"
+                [at]="from(post.at)" [tags]="post.tags" [writer]="post.writer"></app-post>
+            <app-post view="latest" [id]="post.id" [image]="post.image" [title]="post.title" [summery]="post.summery"
+                [at]="from(post.at)" [tags]="post.tags" [writer]="post.writer"></app-post>
+        </section>
+    </section>
+
+    <app-video [url]="video.url" [image]="video.image" [title]="video.title" [content]="video.content"
+        [tags]="video.tags"></app-video>
+
+    <section class="posts flex column">
+        <div class="head-title">
+            نوشته های قدیمی تر
+        </div>
+
+        <div class="grid">
+            <app-post [id]="post.id" [image]="post.image" [title]="post.title" [summery]="post.summery"
+                [at]="from(post.at)" [tags]="post.tags" [writer]="post.writer"></app-post>
+            <app-post [id]="post.id" [image]="post.image" [title]="post.title" [summery]="post.summery"
+                [at]="from(post.at)" [tags]="post.tags" [writer]="post.writer"></app-post>
+            <app-post [id]="post.id" [image]="post.image" [title]="post.title" [summery]="post.summery"
+                [at]="from(post.at)" [tags]="post.tags" [writer]="post.writer"></app-post>
+            <app-post [id]="post.id" [image]="post.image" [title]="post.title" [summery]="post.summery"
+                [at]="from(post.at)" [tags]="post.tags" [writer]="post.writer"></app-post>
+        </div>
+    </section>
+
+    <button>بیشتر میخوام</button>
+</div>

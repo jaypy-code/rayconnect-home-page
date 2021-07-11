@@ -1,0 +1,23 @@
+@import "../style/variables.css";
+
+main.blog {
+    padding: 0 10vw;
+
+    height: 100vh;
+
+    background-color: var(--background-color);
+
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1300px) {
+    main.blog {
+        padding: 0 2vw;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    main.blog {
+        padding: 0;
+    }
+}

@@ -1,0 +1,17 @@
+<a [routerLink]="'/blog/post/'+id">
+    <article [ngClass]="[view]" class="flex">
+        <img [src]="image" [alt]="title" [title]="title">
+        <div class="flex column">
+            <h2>{{title}}</h2>
+            <span class="who-and-when">نوشته ای از {{writer}} در {{at}}</span>
+            <p>{{summery}}</p>
+
+
+            <div class="tags flex nowrap ai-c">
+                <ng-container *ngFor="let tag of tags">
+                    <span># {{tag}}</span>
+                </ng-container>
+            </div>
+        </div>
+    </article>
+</a>

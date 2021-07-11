@@ -1,0 +1,20 @@
+<section id="video-container" class="flex nowrap">
+    <div class="video-container flex jc-c ai-c">
+        <video #video controls [src]="url" [poster]="image"></video>
+    </div>
+
+    <div class="content flex column">
+        <h2>{{title}}</h2>
+        <p>{{content}}</p>
+
+        <div class="tags flex nowrap ai-c">
+            <ng-container *ngFor="let tag of tags">
+                <a [routerLink]="'/blog/tag/'+encode(tag)"># {{tag}}</a>
+            </ng-container>
+        </div>
+
+        <a class="more">
+            ویدئو های بیشتر
+        </a>
+    </div>
+</section>

@@ -1,0 +1,48 @@
+main.blog {
+    --animation-speed: 0.3s;
+
+    --radius: 3px;
+
+    --background-color: #f6f2d1;
+
+    --header-text-color: #212121;
+    --header-title-text-color: #212121;
+    --header-subtitle-text-color: #616161;
+    --header-details-background-color: #212121;
+    --header-details-text-color: #ffffff;
+    --header-row-border-color: #212121;
+    --header-search-placeholder-text-color: #424242;
+    --header-search-button-icon-color: #212121;
+    --header-search-button-hover-icon-color: #ffffff;
+    --header-search-button-background-color: #212121;
+    --header-back-link-text-color: #212121;
+    --header-back-link-icon-background-color: #212121;
+    --header-back-link-icon-fill-color: #ffffff;
+
+    --video-background-color: #212121;
+    --video-title-text-color: #ffffff;
+    --video-content-text-color: #eeeeee;
+    --video-tag-background-color: #313131;
+    --video-tag-text-color: #ffffff;
+    --video-shadow-color: #313131;
+    --video-more-text-color: #ffffff;
+    --video-more-border-color: #eeeeee;
+
+    --post-border-color: #212121;
+    --post-title-text-color: #424242;
+    --post-summery-text-color: #616161;
+    --post-date-text-color: #757575;
+    --post-image-shadow-color: #dad188;
+    --post-tag-background-color: #212121;
+    --post-tag-text-color: #ffffff;
+
+    --more-button-background-color: #212121;
+    --more-button-text-color: #ffffff;
+    --more-button-border-color: #212121;
+
+    --article-social-button-icon-fill-color: #212121;
+    --article-social-button-hover-background-color: #dad188;
+    --article-posts-border-color: #212121;
+    --article-posts-hover-background-color: #212121;
+    --article-posts-hover-text-color: #ffffff;
+}

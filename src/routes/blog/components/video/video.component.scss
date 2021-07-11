@@ -1,0 +1,115 @@
+section {
+    min-height: 370px;
+
+    background-color: var(--video-background-color);
+
+    border-radius: var(--radius);
+
+    position: relative;
+
+    transition: all var(--animation-speed);
+
+    &.full {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div.video-container {
+            width: 80%;
+            margin-top: 50px;
+        }
+
+        div.content {
+            width: 60%;
+            padding: 50px;
+
+            a.more {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    div.video-container {
+        width: 40%;
+        min-width: 450px;
+
+        video {
+            width: 80%;
+            height: 80%;
+
+            box-shadow: 10px 10px var(--video-shadow-color);
+
+            &:hover {
+                box-shadow: 7px 7px var(--video-shadow-color);
+            }
+        }
+    }
+
+    div.content {
+        padding: 30px 50px 30px 50px;
+    }
+
+    h2 {
+        color: var(--video-title-text-color);
+        line-height: 40px;
+    }
+
+    p {
+        color: var(--video-content-text-color);
+        line-height: 30px;
+    }
+
+    div.tags {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        a {
+            background-color: var(--video-tag-background-color);
+            color: var(--video-tag-text-color);
+
+            font-size: 12px;
+
+            padding: 8px 16px;
+
+            border-radius: var(--radius);
+
+            margin-left: 5px;
+        }
+    }
+
+    a.more {
+        width: 100%;
+
+        margin-top: auto;
+
+        text-align: center;
+
+        color: var(--video-more-text-color);
+
+        border-top: 1px solid var(--video-more-border-color);
+
+        padding-top: 14px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div.video-container {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        div.content {
+            width: 80%;
+            padding: 50px;
+
+            a.more {
+                margin-top: 50px;
+            }
+        }
+    }
+}
