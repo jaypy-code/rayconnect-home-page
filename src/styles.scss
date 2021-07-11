@@ -19,3 +19,12 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
+
+main {
+    height: 100vh;
+
+    background-color: var(--background-color);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
