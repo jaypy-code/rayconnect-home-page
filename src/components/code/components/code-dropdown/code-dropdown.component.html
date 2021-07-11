@@ -5,10 +5,15 @@
         </ng-container>
     </div>
 
-    <div class="files flex column">
+    <div class="files flex wrap">
         <ng-container *ngFor="let item of files">
-            <div class="item" [ngClass]="{'active': item.index == index}" (click)="changeIndex.emit(item.index)">
-                {{item.name}}</div>
+            <div class="item flex column ai-c" [ngClass]="{'active': item.index == index}"
+                (click)="changeIndex.emit(item.index)">
+                <div class="file">
+                    <span>{{format}}</span>
+                </div>
+                <span class="name">{{item.name}}</span>
+            </div>
         </ng-container>
     </div>
 </div>

@@ -2,10 +2,10 @@ div.dropdown {
     position: absolute;
 
     top: 70px;
-    left: 8%;
+    left: 50px;
 
-    width: 30%;
-    height: 70%;
+    width: 70%;
+    height: 75%;
 
     min-width: 250px;
 
@@ -20,7 +20,7 @@ div.dropdown {
     transition: all var(--animation-speed);
 
     &:not(.show) {
-        top: 50px;
+        top: 20px;
 
         opacity: 0;
 
@@ -74,12 +74,29 @@ div.dropdown {
 
             border-bottom: 1px solid rgba($color: #000000, $alpha: 0.12);
 
-            span {
-                margin-left: auto;
-            }
+            div.file {
+                width: 50px;
+                height: 75px;
 
-            &.active {
-                background-color: rgba($color: #000000, $alpha: 0.09);
+                background-image: url("/assets/images/code/file.svg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                position: relative;
+
+                span {
+                    position: absolute;
+
+                    bottom: 15px;
+                    right: 10px;
+
+                    font-size: 70%;
+
+                    text-transform: uppercase;
+
+                    color: #ffffff;
+                }
             }
         }
     }

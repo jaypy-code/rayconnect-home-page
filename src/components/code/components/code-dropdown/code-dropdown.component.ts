@@ -24,6 +24,10 @@ export class CodeDropdownComponent implements OnInit {
     return files.filter(item => item.lang === this.lang).map(item => { return { name: item.name, index: files.indexOf(item) } });
   }
 
+  get format(): string {
+    return files.filter(item => item.lang === this.lang)[0].name.split('.')[1];
+  }
+
   constructor() { }
 
   ngOnInit(): void {
