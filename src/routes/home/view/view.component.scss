@@ -5,13 +5,15 @@
 @import "../style/620.scss";
 
 main.home {
-    height: calc(100vh - 40px);
+    padding: 0 10vw;
 
-    padding: 20px 10vw;
+    app-header {
+        margin-top: 20px;
+    }
 
-    background-color: var(--background-color);
-
-    overflow-x: hidden;
+    app-footer {
+        margin-bottom: 20px;
+    }
 
     div.boxs-faqs-sub {
         width: 100%;
