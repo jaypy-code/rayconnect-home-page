@@ -1,10 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { IFile, files } from '../database/code';
 
 @Component({
   selector: 'app-code',
   templateUrl: './view.component.html',
-  styleUrls: ['./view.component.scss']
+  styleUrls: ['./view.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ViewComponent implements OnInit {
 
