@@ -1,3 +1,5 @@
+@import "../styles/variables.css";
+
 section.code {
     width: 50vw;
     height: 600px;
@@ -9,6 +11,15 @@ section.code {
     position: relative;
 
     top: 30px;
+
+    &:not(.details) {
+        div.code-container {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
 
     div.code-container {
         width: 100%;
@@ -86,7 +97,7 @@ section.code {
 
             border-radius: 50%;
 
-            border: 2px solid var(--subscribe-icon-border-color);
+            border: 2px solid var(--code-icon-border-color);
 
             z-index: -1;
         }
@@ -97,7 +108,7 @@ section.code {
 
             border-radius: 50%;
 
-            background-color: var(--subscribe-icon-background-color);
+            background-color: var(--code-icon-background-color);
 
             background-image: url("/assets/images/home/micro.svg");
             background-position: center center;

@@ -1,4 +1,4 @@
-<section class="code flex nowrap">
+<section [ngClass]="{'details': details}" class="code flex nowrap">
     <app-code-drawer></app-code-drawer>
 
     <div class="code-container flex column">
@@ -11,9 +11,11 @@
         <app-code-content [code]="files[index].code"></app-code-content>
     </div>
 
-    <app-code-info></app-code-info>
+    <ng-container *ngIf="details">
+        <app-code-info></app-code-info>
 
-    <div class="icon-container">
-        <div class="icon"></div>
-    </div>
+        <div class="icon-container">
+            <div class="icon"></div>
+        </div>
+    </ng-container>
 </section>

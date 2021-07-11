@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { files } from '../../../../database/code';
+import { files } from '../../database/code';
 
 @Component({
   selector: 'app-code-dropdown',
