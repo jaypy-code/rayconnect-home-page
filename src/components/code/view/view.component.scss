@@ -13,6 +13,8 @@ section.code {
     top: 30px;
 
     &:not(.details) {
+        top: 0 !important;
+
         div.code-container {
             &::before,
             &::after {
@@ -42,6 +44,10 @@ section.code {
             }
         }
 
+        app-code-content {
+            height: calc(100% - 40px) !important;
+        }
+
         div.content {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
@@ -49,7 +55,6 @@ section.code {
             width: 100%;
 
             padding-top: 0;
-            padding-bottom: 20px;
         }
 
         div.dropdown {
@@ -154,7 +159,7 @@ section.code {
 
             background-color: var(--code-icon-background-color);
 
-            background-image: url("/assets/images/home/micro.svg");
+            background-image: url("/assets/images/code/micro.svg");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: 28px;
