@@ -75,14 +75,13 @@ article {
         margin-bottom: 20px;
 
         a {
-            background-color: var(--post-tag-background-color);
+            border: 1px solid var(--post-tag-border-color);
+
             color: var(--post-tag-text-color);
 
             font-size: 12px;
 
-            padding: 8px 16px;
-
-            border-radius: var(--radius);
+            padding: 5px 14px;
 
             margin-left: 5px;
 

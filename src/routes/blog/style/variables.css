@@ -30,11 +30,12 @@ main.blog {
 
     --post-border-color: #212121;
     --post-title-text-color: #424242;
+    --post-title-highlight-color: #dad188;
     --post-summery-text-color: #616161;
     --post-date-text-color: #757575;
     --post-image-shadow-color: #dad188;
-    --post-tag-background-color: #212121;
-    --post-tag-text-color: #ffffff;
+    --post-tag-border-color: #212121;
+    --post-tag-text-color: #212121;
 
     --more-button-background-color: #212121;
     --more-button-text-color: #ffffff;
