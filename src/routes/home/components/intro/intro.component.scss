@@ -89,17 +89,17 @@ section.intro {
 
         &:hover {
             &::before {
-                transform: rotate(5deg);
+                transform: rotate(25deg);
             }
 
             &::after {
-                transform: rotate(-5deg);
+                transform: rotate(0deg);
             }
         }
 
         &:active {
             &::before {
-                transform: rotate(2deg);
+                transform: rotate(20deg);
             }
 
             &::after {
