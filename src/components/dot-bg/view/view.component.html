@@ -1,0 +1,11 @@
+<div class="dots flex column">
+    <ng-container *ngFor="let i of row">
+        <div class="flex nowrap">
+            <ng-container *ngFor="let j of col">
+                <div class="dot"
+                    [ngStyle]="{'width': size, 'height': size, 'background-color': color, 'margin': margin}">
+                </div>
+            </ng-container>
+        </div>
+    </ng-container>
+</div>
