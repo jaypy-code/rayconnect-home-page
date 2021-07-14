@@ -1,0 +1,68 @@
+section.intro {
+    span {
+        position: relative;
+
+        right: 50px;
+
+        color: var(--intro-head-text-color);
+
+        &::before {
+            content: "";
+
+            position: absolute;
+
+            top: 50%;
+            right: -50px;
+
+            width: 30px;
+            height: 3px;
+
+            border-radius: 2em;
+
+            background-color: var(--intro-head-border-color);
+        }
+    }
+
+    h1 {
+        font-size: 3em;
+
+        line-height: 2;
+
+        color: var(--intro-title-text-color);
+    }
+
+    p {
+        font-size: 1.2em;
+
+        line-height: 2;
+
+        color: var(--intro-subtitle-text-color);
+    }
+
+    div.langs {
+        margin-top: 50px;
+
+        a.item {
+            width: 32px;
+            height: 32px;
+
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            margin: 10px;
+
+            &[title="typescript"] {
+                background-image: url("/assets/languages/typescript.svg");
+            }
+
+            &[title="flutter"] {
+                background-image: url("/assets/languages/flutter.svg");
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

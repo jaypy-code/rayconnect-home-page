@@ -1,0 +1,110 @@
+section.fs {
+    min-height: 232px;
+    max-height: 332px;
+
+    overflow: hidden;
+
+    div.header {
+        min-height: 32px;
+        height: 32px;
+
+        padding: 0 10px;
+
+        border-bottom: 1px solid var(--window-border-color);
+
+        button {
+            background-color: transparent;
+            border: none;
+
+            margin-right: 5px;
+
+            svg {
+                width: 12px;
+                height: 12px;
+
+                fill: var(--fs-header-button-fill-color);
+            }
+
+            &.active {
+                cursor: pointer;
+
+                svg {
+                    fill: var(--fs-header-button-active-fill-color);
+                }
+            }
+
+            &:not(.active) {
+                pointer-events: none;
+            }
+        }
+
+        div.title {
+            font-size: 14px;
+        }
+    }
+
+    div.wrap {
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background-color: var(--window-background-color);
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--window-scroll-color);
+        }
+    }
+
+    div.item {
+        width: 93px;
+        height: 93px;
+
+        margin: 3px;
+
+        cursor: pointer;
+
+        border-radius: var(--radius);
+
+        &:hover {
+            background-color: var(--fs-item-background-color);
+        }
+
+        &:active div.image {
+            transform: scale(0.9);
+        }
+
+        div.image {
+            width: 40px;
+            height: 40px;
+
+            background-size: 40px;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            position: relative;
+
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-size: 12px;
+
+            text-align: center;
+        }
+    }
+
+    div.folder div.image {
+        background-image: url("/assets/images/docs/folder.svg");
+    }
+
+    div.file div.image {
+        background-image: url("/assets/images/docs/file.svg");
+    }
+}

@@ -1,0 +1,21 @@
+<main class="docs-home flex column">
+    <app-header></app-header>
+    <div class="fs-intro flex nowrap ai-c jc-c">
+        <app-dot-bg [rows]="20" [cols]="20" color="#313131" size="8px" margin="5px"></app-dot-bg>
+        <app-window [AppTitle]="path">
+            <app-fs [(path)]="path"></app-fs>
+        </app-window>
+
+        <app-intro></app-intro>
+    </div>
+
+    <app-info></app-info>
+
+    <div class="code flex jc-c">
+        <app-window AppTitle="Code Editor">
+            <app-code [code]="code"></app-code>
+        </app-window>
+        <app-dot-bg [rows]="15" [cols]="15" color="#515151" size="8px" margin="10px"></app-dot-bg>
+
+    </div>
+</main>

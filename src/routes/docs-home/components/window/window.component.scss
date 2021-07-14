@@ -1,0 +1,46 @@
+section.window {
+    border-radius: var(--radius);
+
+    border: 1px solid var(--window-border-color);
+
+    box-shadow: 10px 10px var(--window-shadow-color);
+
+    background-color: var(--window-background-color);
+
+    direction: ltr;
+
+    width: inherit;
+
+    div.header {
+        padding: 12px 20px;
+
+        border-bottom: 1px solid var(--window-border-color);
+
+        background-color: var(--window-header-background-color);
+
+        div.btn {
+            margin-right: 5px;
+
+            width: 11px;
+            height: 11px;
+
+            border: 1px solid var(--window-header-button-border-color);
+
+            border-radius: 50%;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--window-header-button-background-color);
+            }
+        }
+
+        div.title {
+            margin: 0 auto;
+        }
+    }
+
+    div.content {
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,80 @@
+section.code {
+    overflow: hidden;
+
+    div.header {
+        min-height: 32px;
+        height: 32px;
+
+        border-bottom: 1px solid var(--window-border-color);
+
+        div.button {
+            padding: 0 10px;
+            height: 100%;
+
+            cursor: pointer;
+
+            font-size: 14px;
+
+            &:hover {
+                background-color: var(--code-header-button-background-color);
+            }
+        }
+    }
+
+    div.content {
+        min-height: 300px;
+        max-height: 350px;
+
+        overflow: auto;
+
+        div.lines-number {
+            width: 40px;
+            min-width: 40px;
+
+            line-height: 30px;
+
+            font-size: 0.8em;
+
+            text-align: right;
+
+            color: rgba($color: #000000, $alpha: 0.5);
+
+            margin-right: 14px;
+            margin-bottom: 14px;
+
+            span {
+                font-family: Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+
+        pre {
+            margin-top: -0px;
+
+            line-height: 30px;
+
+            font-size: 0.8em;
+
+            user-select: text;
+
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+
+            &::selection {
+                background-color: rgba($color: #000000, $alpha: 0.2);
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--code-content-scroll-color);
+        }
+    }
+}

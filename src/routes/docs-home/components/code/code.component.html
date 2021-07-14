@@ -1,0 +1,22 @@
+<section class="code flex column">
+    <div class="header flex nowrap ai-c">
+        <div class="button flex ai-c jc-c">File</div>
+        <div class="button flex ai-c jc-c">Edit</div>
+        <div class="button flex ai-c jc-c">View</div>
+        <div class="button flex ai-c jc-c">Go</div>
+        <div class="button flex ai-c jc-c">Run</div>
+        <div class="button flex ai-c jc-c">Terminal</div>
+        <div class="button flex ai-c jc-c">Help</div>
+    </div>
+
+    <div class="content flex nowrap">
+        <div class="lines-number flex column">
+            <ng-container *ngFor="let line of lines">
+                <span>{{line}}</span>
+            </ng-container>
+            <br><br><br><br><br>
+        </div>
+
+        <pre>{{code}}</pre>
+    </div>
+</section>

@@ -1,0 +1,37 @@
+main.docs-home {
+    --background-color: #cfb9e2;
+
+    --radius: 5px;
+
+    --animation-speed: 0.3s;
+
+    --header-title-text-color: #212121;
+    --header-subtitle-text-color: #515151;
+
+    --window-border-color: #212121;
+    --window-shadow-color: #313131;
+    --window-background-color: #cfb9e2;
+    --window-header-background-color: #c2a4dd;
+    --window-header-button-border-color: #212121;
+    --window-header-button-background-color: #9d76c0;
+    --window-scroll-color: #a35ee0;
+
+    --fs-header-button-fill-color: rgba(0, 0, 0, 0.5);
+    --fs-header-button-active-fill-color: #000000;
+    --fs-item-background-color: rgba(0, 0, 0, 0.05);
+
+    --intro-head-text-color: #7f30c5;
+    --intro-head-border-color: #7f30c5;
+    --intro-title-text-color: #313131;
+    --intro-subtitle-text-color: #515151;
+    --intro-link-background-color: #a35ee0;
+    --intro-link-text-color: #ffffff;
+    --intro-link-hover-background-color: #212121;
+    --intro-link-hover-text-color: #ffffff;
+
+    --info-image-background-color: #212121;
+    --info-title-background-color: #c2a4dd;
+
+    --code-header-button-background-color: rgba(0, 0, 0, 0.05);
+    --code-content-scroll-color: #a35ee0;
+}

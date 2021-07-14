@@ -1,0 +1,11 @@
+<section class="intro flex column">
+    <span>مستندات</span>
+    <h1>{{title}}</h1>
+    <p>{{subtitle}}</p>
+
+    <div class="langs flex wrap ai-c">
+        <ng-container *ngFor="let item of langs">
+            <a [routerLink]="'/docs/'+item+'/get-start'" class="item" [title]="item"></a>
+        </ng-container>
+    </div>
+</section>
