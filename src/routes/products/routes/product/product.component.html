@@ -1,0 +1,22 @@
+<article class="flex nowrap">
+    <img [src]="item.logo" [alt]="item.title">
+    <div class="content flex column">
+
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+        <div class="langs flex nowrap">
+            <ng-container *ngFor="let lang of item.langs">
+                <a [routerLink]="'/docs/'+lang+'/products/'+item.name" class="lang" [title]="lang"></a>
+            </ng-container>
+        </div>
+
+        <h4>ویژگی ها و قابلیت ها</h4>
+        <div class="options flex column">
+            <ng-container *ngFor="let option of item.options">
+                <div class="option">
+                    {{option}}
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</article>

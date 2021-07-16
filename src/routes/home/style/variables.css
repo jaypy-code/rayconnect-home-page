@@ -7,6 +7,7 @@ main.home {
 
     --header-text-color: #616161;
     --header-border-color: #424242;
+    --header-link-background-color: #e7d8c6;
     --header-button-line-color: #424242;
 
     --intro-title-color: #333333;
@@ -18,6 +19,7 @@ main.home {
     --box-border-color: #424244;
     --box-content-text-color: #707070;
     --box-link-text-color: #b6281a;
+    --box-background-color: #e7dcce;
 
     --faq-line-color: #616161;
     --faq-answer-text-color: #707070;

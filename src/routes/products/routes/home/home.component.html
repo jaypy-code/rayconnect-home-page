@@ -1,0 +1,10 @@
+<div class="intro-animation">
+    <app-intro></app-intro>
+</div>
+
+<div class="items">
+    <ng-container *ngFor="let item of items">
+        <app-item [name]="item.name" [logo]="item.logo" [title]="item.title" [description]="item.description"
+            [langs]="item.langs"></app-item>
+    </ng-container>
+</div>

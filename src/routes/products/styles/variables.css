@@ -1,0 +1,25 @@
+main.products {
+    --background-color: #cdf1ad;
+
+    --radius: 4px;
+
+    --animation-speed: 0.3s;
+
+    --header-title-text-color: #212121;
+    --header-subtitle-text-color: #515151;
+
+    --intro-toptitle-text-color: #717171;
+    --intro-title-text-color: #313131;
+    --intro-link-border-color: #212121;
+    --intro-link-text-color: #212121;
+    --intro-link-hover-text-color: #fff;
+    --intro-link-background-color: #212121;
+
+    --item-shadow-color: rgba(0, 0, 0, 0.5);
+    --item-border-color: #212121;
+    --item-title-text-color: #212121;
+    --item-description-text-color: #515151;
+    --item-link-text-color: #313131;
+
+    --option-arrow-background-color: #616161;
+}

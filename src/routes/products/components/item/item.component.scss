@@ -1,0 +1,91 @@
+article {
+    border: 3px solid var(--item-border-color);
+
+    border-radius: var(--radius);
+
+    padding: 20px;
+
+    box-shadow: 10px 10px var(--item-shadow-color);
+
+    transition: all var(--animation-speed);
+
+    &:hover {
+        box-shadow: 13px 13px var(--item-shadow-color);
+    }
+
+    img {
+        width: 60%;
+        height: 60%;
+        margin: 50px auto;
+    }
+
+    h2 {
+        color: var(--item-title-text-color);
+    }
+
+    p {
+        color: var(--item-description-text-color);
+        line-height: 1.5;
+    }
+
+    a.lang {
+        width: 28px;
+        height: 28px;
+
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        margin: 10px;
+
+        &[title="typescript"] {
+            background-image: url("/assets/languages/typescript.svg");
+        }
+
+        &[title="flutter"] {
+            background-image: url("/assets/languages/flutter.svg");
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    a.more {
+        margin-top: 50px;
+        margin-right: auto;
+
+        &:not(:active):hover svg {
+            top: -3px;
+            left: -3px;
+        }
+
+        span {
+            text-decoration: underline;
+
+            color: var(--item-link-text-color);
+
+            margin-left: 12px;
+
+            font-size: 18px;
+
+            transition: all var(--animation-speed);
+        }
+
+        svg {
+            position: relative;
+
+            top: 3px;
+            left: 0;
+
+            width: 22px;
+            height: 22px;
+
+            transform: rotate(45deg);
+
+            fill: var(--item-link-text-color);
+
+            transition: all var(--animation-speed);
+        }
+    }
+}

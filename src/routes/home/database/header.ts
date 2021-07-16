@@ -14,7 +14,7 @@ export const links: ILink[] = [
     },
     {
         text: 'محصولات',
-        link: '/proucts'
+        link: '/products'
     },
     {
         text: 'وبلاگ',

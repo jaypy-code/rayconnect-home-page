@@ -1,0 +1,92 @@
+article {
+    padding: 20px;
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    div.content {
+        margin-right: 5vw;
+        width: 55vw;
+    }
+
+    h2 {
+        color: var(--item-title-text-color);
+    }
+
+    p {
+        color: var(--item-description-text-color);
+        line-height: 1.5;
+    }
+
+    a.lang {
+        width: 28px;
+        height: 28px;
+
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        margin: 10px;
+
+        &[title="typescript"] {
+            background-image: url("/assets/languages/typescript.svg");
+        }
+
+        &[title="flutter"] {
+            background-image: url("/assets/languages/flutter.svg");
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    h4 {
+        margin-top: 100px;
+    }
+
+    div.options {
+        div.option {
+            margin-right: 10%;
+            margin-bottom: 50px;
+
+            position: relative;
+
+            line-height: 2em;
+
+            color: var(--item-description-text-color);
+
+            &::before {
+                content: "";
+
+                position: absolute;
+
+                top: 15px;
+                right: -50px;
+
+                width: 30px;
+                height: 3px;
+
+                background-color: var(--option-arrow-background-color);
+
+                border-radius: var(--radius);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    article {
+        flex-direction: column;
+        align-items: center;
+
+        div.content {
+            margin-right: 0;
+            margin-top: 50px;
+
+            width: 80vw;
+        }
+    }
+}

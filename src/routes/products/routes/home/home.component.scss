@@ -1,0 +1,29 @@
+div.items {
+    padding-top: 100px;
+    padding-bottom: 200px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    app-item {
+        margin: 10px 20px 50px 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    div.items {
+        grid-template-columns: auto auto auto !important;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    div.items {
+        grid-template-columns: auto auto !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.items {
+        grid-template-columns: auto !important;
+    }
+}
