@@ -1,0 +1,19 @@
+header {
+    padding: 40px 0;
+
+    a.app-header {
+        span.title {
+            font-size: 2em;
+
+            margin-bottom: 12px;
+
+            color: var(--header-title-text-color);
+        }
+
+        span.subtitle {
+            font-size: 1em;
+
+            color: var(--header-subtitle-text-color);
+        }
+    }
+}

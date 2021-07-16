@@ -20,8 +20,17 @@ body {
 }
 
 a {
-    cursor: pointer;
     text-decoration: none;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    border: none;
 }
 
 main {

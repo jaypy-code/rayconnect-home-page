@@ -10,6 +10,9 @@ const routes: Routes = [
   },
   {
     path: 'docs', loadChildren: () => import('../routes/docs-home/docs-home.module').then(m => m.DocsHomeModule)
+  },
+  {
+    path: 'support', loadChildren: () => import('../routes/support/support.module').then(m => m.SupportModule)
   }
 ];
 

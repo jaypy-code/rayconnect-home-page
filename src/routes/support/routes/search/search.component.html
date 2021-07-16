@@ -1,0 +1,14 @@
+<div class="container flex column">
+    <div class="image-intro flex nowrap ai-c">
+        <app-dot-bg [rows]="15" [cols]="15" color="#313131" size="10px" margin="10px"></app-dot-bg>
+        <div class="image"></div>
+        <app-intro></app-intro>
+    </div>
+
+    <div class="items">
+        <ng-container *ngFor="let item of items">
+            <app-item [id]="item.id" [title]="item.title" [summery]="item.summery" [category]="item.category">
+            </app-item>
+        </ng-container>
+    </div>
+</div>

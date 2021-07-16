@@ -1,0 +1,27 @@
+main.support {
+    --background-color: #aadfe6;
+
+    --radius: 4px;
+
+    --animation-speed: 0.3s;
+
+    --header-title-text-color: #212121;
+    --header-subtitle-text-color: #515151;
+
+    --search-input-background-color: #c2e6eb;
+    --search-input-border-color: #212121;
+    --search-input-button-background-color: #212121;
+
+    --item-border-color: #212121;
+    --item-category-text-color: #414141;
+    --item-title-text-color: #212121;
+    --item-summery-text-color: #515151;
+    --item-link-text-color: #212121;
+    --item-hover-category-text-color: #e5e5e5;
+    --item-hover-title-text-color: #fff;
+    --item-hover-summery-text-color: #eee;
+    --item-hover-link-text-color: #fff;
+
+    --likes-background-color: #212121;
+    --likes-text-color: #fff;
+}

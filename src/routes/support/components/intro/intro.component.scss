@@ -1,0 +1,19 @@
+section.intro {
+    h1 {
+        font-size: 3em;
+        line-height: 2;
+
+        margin-bottom: 80px;
+    }
+
+    app-search-input {
+        width: 80%;
+        height: 56px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    app-search-input {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,27 @@
+section.like {
+    border-top: 1px solid var(--item-border-color);
+
+    p {
+        margin-left: auto;
+        line-height: 1.5;
+    }
+
+    div.likes {
+        margin-right: 12px;
+
+        background-color: var(--likes-background-color);
+        color: var(--likes-text-color);
+
+        padding: 8px 18px;
+
+        border-radius: 2em;
+
+        span {
+            margin: 0 20px;
+        }
+
+        button {
+            color: var(--likes-text-color);
+        }
+    }
+}
